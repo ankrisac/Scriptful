@@ -10,6 +10,11 @@ pip install glad
 
 meson.build
 ```
+project(
+    'glad', 'c',
+    version: '0.1.0'
+)
+
 python = import('python').find_installation(modules: 'glad')
 
 run_command(
